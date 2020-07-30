@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+.APP-mystyle {
+  background-color: pink;
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
