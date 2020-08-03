@@ -16,13 +16,12 @@ export default class App extends Component{
   };
   
   multiple = () => {
-    this.state.num%5==0 ? setTimeout(() => {
+    this.state.num%5===0 ? setTimeout(() => {
       this.setState({text : " 5의 배수가 맞습니다."})
     }, 3000) : this.setState({
       text : " 5의 배수가 아닙니다."
     })
   }
-
 
   render(){
     const {num, text} = this.state;
