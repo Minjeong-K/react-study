@@ -45,3 +45,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+body{
+  background-color: #282c34;
+}
+
+.container {
+  margin: 50px;
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
