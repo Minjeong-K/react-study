@@ -1,14 +1,20 @@
-import React, {Component} from "react";
-import './App.css'
+import React, {Component} from 'react'
+import {HashRouter, BrowserRouter, Route} from 'react-router-dom'
 
-export default class App extends Component{
-  state = {
-    
-  }
+import Home from './routers/Home.js'
+import About from './routers/About.js'
+import Detail from './routers/Detail.js'
+import Navigation from './components/Navigation.js'
 
-  render(){
-    return(
-      <div>Hello</div>
-    )
-  }
+export default class App extends Component {
+    render() {
+        return (
+            <HashRouter>
+                <Navigation />
+                <Route exact="true" path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/detail" component={Detail} />
+            </HashRouter>
+        )
+    }
 }
